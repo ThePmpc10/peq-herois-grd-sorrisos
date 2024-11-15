@@ -93,12 +93,14 @@
 /* Estilos das Mensagens */
 .chatbot-container .message {
     position: relative;
-    max-width: 80%;
+    max-width: 75%;
     padding: 8px 15px;
     padding-bottom: 18px; /* Espaço extra para o horário */
     border-radius: 15px;
     font-size: 14px;
     line-height: 1.4;
+    word-wrap: break-word; /* Permite que o texto longo quebre em várias linhas */
+    white-space: normal;  /* Faz com que o texto se ajuste automaticamente */
 }
 
 .chatbot-container .user-message {
