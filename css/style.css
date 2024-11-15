@@ -9,6 +9,10 @@ body {
   color: #555555;
 }
 
+body, html{
+  overflow-x: hidden; /* Esconde rolagem horizontal */
+}
+
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;

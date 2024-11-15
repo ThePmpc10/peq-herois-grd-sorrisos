@@ -22,9 +22,15 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/chatbot.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
   </head>
   <body>
@@ -50,6 +56,26 @@
       </div>
     </nav>
   <!-- END nav -->
+
+    <!-- Ícone do Chatbot -->
+    <div class="chatbot-container">
+      <div class="chatbot-icon" id="chatbot-icon" onclick="toggleChatbot()">
+        <span class="material-symbols-outlined">mode_comment</span>
+      </div>
+      <div class="chatbot-window" id="chatbot-window">
+        <div class="chat-header">
+          Morty<span class="status-indicator"></span>
+          <!-- Botão de Fechar -->
+          <span class="close-btn" onclick="toggleChatbot()">×</span>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-footer">
+          <input type="text" id="user-input" placeholder="Escreva a sua mensagem..." />
+          <!-- Ícone de Enviar -->
+          <i class="material-icons" style="font-size: 30px; color: #f7ca44; cursor: pointer;" onclick="sendMessage()">send</i>
+        </div>
+      </div>
+    </div>
   
   
   <div class="block-31" style="position: relative;">
@@ -288,6 +314,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+
+    <!-- JS for Chatbot -->
+    <script src="js/chatbot.js"></script>
   </body>
 </html>
